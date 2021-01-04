@@ -20,6 +20,7 @@
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
+        "symfony/maker-bundle": "^1.26",
         "symfony/stopwatch": "^5.2",
         "symfony/web-profiler-bundle": "^5.2",
         "symfony/web-server-bundle": "4.4.6"

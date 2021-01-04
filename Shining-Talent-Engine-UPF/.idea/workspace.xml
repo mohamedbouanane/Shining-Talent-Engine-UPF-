@@ -1,20 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ede02645-a500-468d-a040-4e1eba955652" name="Default Changelist" comment="" />
+    <list default="true" id="ede02645-a500-468d-a040-4e1eba955652" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/TestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/header.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/menu.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/test/acceuil.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Shining-Talent-Engine-UPF.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Shining-Talent-Engine-UPF.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/cleancode-git/Shining-Talent-Engine-UPF-.git" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -65,20 +102,40 @@
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/asset" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mBuKf0vgWJY0YU0Us9WLDgEKCZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/image" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ihiri\Documents\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\public\image" />
+      <recent name="C:\Users\ihiri\Documents\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\public\img" />
+      <recent name="C:\Users\ihiri\Documents\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\public" />
+      <recent name="C:\Users\ihiri\Documents\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\assets\image" />
+      <recent name="C:\Users\ihiri\Documents\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\assets\css" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -91,16 +148,81 @@
       <option name="presentableId" value="Default" />
       <updated>1608308056175</updated>
       <workItem from="1608308057475" duration="308000" />
+      <workItem from="1609165005478" duration="13000" />
+      <workItem from="1609185674126" duration="266000" />
+      <workItem from="1609264609291" duration="7312000" />
+      <workItem from="1609449731204" duration="73000" />
+      <workItem from="1609451034645" duration="6304000" />
+      <workItem from="1609591951468" duration="1254000" />
+      <workItem from="1609593446579" duration="11092000" />
+      <workItem from="1609612736768" duration="3604000" />
+      <workItem from="1609705165741" duration="4308000" />
+      <workItem from="1609772459958" duration="9231000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/ihiri/Documents/Shining-Talent-Engine-UPF-/Shining-Talent-Engine-UPF/templates" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1608979241437">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609310595454">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609310595454" />
+    <state x="488" y="151" key="FileChooserDialogImpl" timestamp="1609335336751">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="151" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609335336751" />
     <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1608979241437" />
+    <state x="601" y="106" key="NewPhpClassDialog" timestamp="1609595227677">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="601" y="106" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1609595227677" />
+    <state x="518" y="286" key="NewPhpFileDialog" timestamp="1609595207028">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1609595207028" />
+    <state x="710" y="96" width="606" height="536" key="find.popup" timestamp="1609452146088">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="710" y="96" width="606" height="536" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1609452146088" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1609318147337">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1609318147337" />
   </component>
 </project>
