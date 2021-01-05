@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cv index{% endblock %}
+
+{% block body %}
+    <h1>Cv index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Pays</th>
+                <th>Ville</th>
+                <th>Address</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for cv in cvs %}
+            <tr>
+                <td>{{ cv.id }}</td>
+                <td>{{ cv.titre }}</td>
+                <td>{{ cv.pays }}</td>
+                <td>{{ cv.ville }}</td>
+                <td>{{ cv.address }}</td>
+                <td>
+                    <a href="{{ path('cv_show', {'id': cv.id}) }}">show</a>
+                    <a href="{{ path('cv_edit', {'id': cv.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('cv_new') }}">Create new</a>
+{% endblock %}
