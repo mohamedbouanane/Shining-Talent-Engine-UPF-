@@ -20,9 +20,7 @@ class ResponsableController extends AbstractController
      */
     public function index(ResponsableRepository $responsableRepository): Response
     {
-        return $this->render('responsable/index.html.twig', [
-            'responsables' => $responsableRepository->findAll(),
-        ]);
+        return $this->render('responsable.html.twig');
     }
 
     /**

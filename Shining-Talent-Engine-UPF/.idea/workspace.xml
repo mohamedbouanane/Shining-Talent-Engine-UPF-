@@ -108,7 +108,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/build/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Othmane Groupe 1/Sprint 2/Shining-Talent-Engine-UPF" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -143,6 +143,8 @@
       <workItem from="1610445400322" duration="2345000" />
       <workItem from="1610455578555" duration="66000" />
       <workItem from="1610516422852" duration="3204000" />
+      <workItem from="1610524408278" duration="85000" />
+      <workItem from="1610524495894" duration="516000" />
     </task>
     <servers />
   </component>
@@ -150,10 +152,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1610520231212">
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1610524539519">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1610520231212" />
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1610524539519" />
     <state x="465" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1610455596754">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

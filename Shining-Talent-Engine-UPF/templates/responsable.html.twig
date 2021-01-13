@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+{% block title %}Login Page{% endblock %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('build/app.css') }}">{% endblock %}
+{% block body %}
+    <body>
+    <a href="#" class="para">Gestion des comptes des responsables</a>
+    <a href="#" class="para2">Gestion des comptes des responsables</a>
+
+
+    <div class="para3">Liste des comptes des responsables</div>
+
+    <div class="para4">Ajouter un compte</div>
+
+    <div class="nomDutilisateur">Nom d'utilisateur</div>
+    <div class="adresseMail">Adresse mail</div>
+    <div class="motDePasse">Mot de passe</div>
+
+    <input type="text" class="reche" placeholder="Recherche"/>
+
+    <div class="modifier">Modifier</div>
+    <div class="supprimer">Supprimer</div>
+
+    <script src="build/app.js" language="javascript"></script>
+
+    </body>
+{% endblock %}
