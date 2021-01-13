@@ -40,36 +40,30 @@ class Cv
     private $address;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Competence::class)
+     * @ORM\OneToMany(targetEntity=ExperiencePro::class, mappedBy="cv")
      */
-    private $lsCompetences;
+    private $lsExperiencePro;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Formation::class)
+     * @ORM\OneToMany(targetEntity=Formation::class, mappedBy="cv")
      */
     private $lsFormations;
 
     /**
-     * @ORM\ManyToMany(targetEntity=ExperiencePro::class)
+     * @ORM\OneToMany(targetEntity=Competence::class, mappedBy="cv")
      */
-    private $lsExperiencesPro;
+    private $lsCompetences;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Etudiant::class, inversedBy="lsCvs")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="lsCv")
      */
-    private $etudiant;
-
-    /**
-     * @ORM\OneToOne(targetEntity=Etudiant::class, mappedBy="activeCV", cascade={"persist", "remove"})
-     */
-    private $etudiantActif;
+    private $user;
 
     public function __construct()
     {
-        $this->lsCompetences = new ArrayCollection();
+        $this->lsExperiencePro = new ArrayCollection();
         $this->lsFormations = new ArrayCollection();
-        $this->lsExperiencesPro = new ArrayCollection();
+        $this->lsCompetences = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -126,25 +120,31 @@ class Cv
     }
 
     /**
-     * @return Collection|Competence[]
+     * @return Collection|ExperiencePro[]
      */
-    public function getLsCompetences(): Collection
+    public function getLsExperiencePro(): Collection
     {
-        return $this->lsCompetences;
+        return $this->lsExperiencePro;
     }
 
-    public function addLsCompetence(Competence $lsCompetence): self
+    public function addLsExperiencePro(ExperiencePro $lsExperiencePro): self
     {
-        if (!$this->lsCompetences->contains($lsCompetence)) {
-            $this->lsCompetences[] = $lsCompetence;
+        if (!$this->lsExperiencePro->contains($lsExperiencePro)) {
+            $this->lsExperiencePro[] = $lsExperiencePro;
+            $lsExperiencePro->setCv($this);
         }
 
         return $this;
     }
 
-    public function removeLsCompetence(Competence $lsCompetence): self
+    public function removeLsExperiencePro(ExperiencePro $lsExperiencePro): self
     {
-        $this->lsCompetences->removeElement($lsCompetence);
+        if ($this->lsExperiencePro->removeElement($lsExperiencePro)) {
+            // set the owning side to null (unless already changed)
+            if ($lsExperiencePro->getCv() === $this) {
+                $lsExperiencePro->setCv(null);
+            }
+        }
 
         return $this;
     }
@@ -161,6 +161,7 @@ class Cv
     {
         if (!$this->lsFormations->contains($lsFormation)) {
             $this->lsFormations[] = $lsFormation;
+            $lsFormation->setCv($this);
         }
 
         return $this;
@@ -168,60 +169,54 @@ class Cv
 
     public function removeLsFormation(Formation $lsFormation): self
     {
-        $this->lsFormations->removeElement($lsFormation);
+        if ($this->lsFormations->removeElement($lsFormation)) {
+            // set the owning side to null (unless already changed)
+            if ($lsFormation->getCv() === $this) {
+                $lsFormation->setCv(null);
+            }
+        }
 
         return $this;
     }
 
     /**
-     * @return Collection|ExperiencePro[]
+     * @return Collection|Competence[]
      */
-    public function getLsExperiencesPro(): Collection
+    public function getLsCompetences(): Collection
     {
-        return $this->lsExperiencesPro;
+        return $this->lsCompetences;
     }
 
-    public function addLsExperiencesPro(ExperiencePro $lsExperiencesPro): self
+    public function addLsCompetence(Competence $lsCompetence): self
     {
-        if (!$this->lsExperiencesPro->contains($lsExperiencesPro)) {
-            $this->lsExperiencesPro[] = $lsExperiencesPro;
+        if (!$this->lsCompetences->contains($lsCompetence)) {
+            $this->lsCompetences[] = $lsCompetence;
+            $lsCompetence->setCv($this);
         }
 
         return $this;
     }
 
-    public function removeLsExperiencesPro(ExperiencePro $lsExperiencesPro): self
+    public function removeLsCompetence(Competence $lsCompetence): self
     {
-        $this->lsExperiencesPro->removeElement($lsExperiencesPro);
-
-        return $this;
-    }
-
-    public function getEtudiant(): ?Etudiant
-    {
-        return $this->etudiant;
-    }
-
-    public function setEtudiant(?Etudiant $etudiant): self
-    {
-        $this->etudiant = $etudiant;
-
-        return $this;
-    }
-
-    public function getEtudiantActif(): ?Etudiant
-    {
-        return $this->etudiantActif;
-    }
-
-    public function setEtudiantActif(Etudiant $etudiantActif): self
-    {
-        // set the owning side of the relation if necessary
-        if ($etudiantActif->getActiveCV() !== $this) {
-            $etudiantActif->setActiveCV($this);
+        if ($this->lsCompetences->removeElement($lsCompetence)) {
+            // set the owning side to null (unless already changed)
+            if ($lsCompetence->getCv() === $this) {
+                $lsCompetence->setCv(null);
+            }
         }
 
-        $this->etudiantActif = $etudiantActif;
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }

@@ -22,6 +22,11 @@ class Competence
      */
     private $nomCompetence;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Cv::class, inversedBy="lsCompetences")
+     */
+    private $cv;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,6 +40,18 @@ class Competence
     public function setNomCompetence(string $nomCompetence): self
     {
         $this->nomCompetence = $nomCompetence;
+
+        return $this;
+    }
+
+    public function getCv(): ?Cv
+    {
+        return $this->cv;
+    }
+
+    public function setCv(?Cv $cv): self
+    {
+        $this->cv = $cv;
 
         return $this;
     }

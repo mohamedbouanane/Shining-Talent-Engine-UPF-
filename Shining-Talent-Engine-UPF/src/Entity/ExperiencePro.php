@@ -20,7 +20,7 @@ class ExperiencePro
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $poste;
+    private $Poste;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -30,7 +30,7 @@ class ExperiencePro
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $ville;
+    private $Lieu;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -43,14 +43,20 @@ class ExperiencePro
     private $dateDebut;
 
     /**
-     * @ORM\Column(type="date", nullable=true)
+     * @ORM\Column(type="date")
      */
     private $dateFin;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $description;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Cv::class, inversedBy="lsExperiencePro")
+     */
+    private $cv;
+
 
     public function getId(): ?int
     {
@@ -59,12 +65,12 @@ class ExperiencePro
 
     public function getPoste(): ?string
     {
-        return $this->poste;
+        return $this->Poste;
     }
 
-    public function setPoste(string $poste): self
+    public function setPoste(string $Poste): self
     {
-        $this->poste = $poste;
+        $this->Poste = $Poste;
 
         return $this;
     }
@@ -81,14 +87,14 @@ class ExperiencePro
         return $this;
     }
 
-    public function getVille(): ?string
+    public function getLieu(): ?string
     {
-        return $this->ville;
+        return $this->Lieu;
     }
 
-    public function setVille(string $ville): self
+    public function setLieu(string $Lieu): self
     {
-        $this->ville = $ville;
+        $this->Lieu = $Lieu;
 
         return $this;
     }
@@ -122,7 +128,7 @@ class ExperiencePro
         return $this->dateFin;
     }
 
-    public function setDateFin(?\DateTimeInterface $dateFin): self
+    public function setDateFin(\DateTimeInterface $dateFin): self
     {
         $this->dateFin = $dateFin;
 
@@ -134,10 +140,23 @@ class ExperiencePro
         return $this->description;
     }
 
-    public function setDescription(string $description): self
+    public function setDescription(?string $description): self
     {
         $this->description = $description;
 
         return $this;
     }
+
+    public function getCv(): ?Cv
+    {
+        return $this->cv;
+    }
+
+    public function setCv(?Cv $cv): self
+    {
+        $this->cv = $cv;
+
+        return $this;
+    }
+
 }

@@ -20,7 +20,7 @@ class Formation
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $nomFormation;
+    private $titre;
 
     /**
      * @ORM\Column(type="integer")
@@ -37,19 +37,24 @@ class Formation
      */
     private $description;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Cv::class, inversedBy="lsFormations")
+     */
+    private $cv;
+
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getNomFormation(): ?string
+    public function getTitre(): ?string
     {
-        return $this->nomFormation;
+        return $this->titre;
     }
 
-    public function setNomFormation(string $nomFormation): self
+    public function setTitre(string $titre): self
     {
-        $this->nomFormation = $nomFormation;
+        $this->titre = $titre;
 
         return $this;
     }
@@ -86,6 +91,18 @@ class Formation
     public function setDescription(?string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getCv(): ?Cv
+    {
+        return $this->cv;
+    }
+
+    public function setCv(?Cv $cv): self
+    {
+        $this->cv = $cv;
 
         return $this;
     }
