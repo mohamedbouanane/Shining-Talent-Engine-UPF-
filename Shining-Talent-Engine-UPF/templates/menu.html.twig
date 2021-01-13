@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block title %}Login Page{% endblock %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('build/app.css') }}">{% endblock %}
+{% block body %}
+    <body>
+    <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <br><br><br><br>
+        <a href="#" class="w3-bar-item w3-button"><center><img src="images/upf.png" /><div class="upfPageOfficiel">UPF page officiel</div></center></a>
+        <br><br>
+        <a href="#" class="w3-bar-item w3-button"><center><img src="images/info.png" /><div class="aPropos">À propos</div></center></a>
+        <a href="#" class="w3-bar-item w3-button"><center><img src="images/search.png" /><div class="cherchezDesTalans">Cherchez des talans</div></center></a>
+    </div>
+    <div class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    </div>
+    <img src="/build/images/logo.png" class="logo">
+    <div class="title">UPF Shining Talent Engine</div>
+    <img src="/build/images/user.png.png" class="logo2">
+    <script src="/build/app.js" language="javascript"></script>
+    </body>
+{% endblock %}

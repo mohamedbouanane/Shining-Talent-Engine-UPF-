@@ -108,7 +108,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Mehdi Groupe 1/Sprint 1/Shining-Talent-Engine-UPF" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -121,6 +121,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Symfony\Othmane Groupe 1\Sprint 2\Shining-Talent-Engine-UPF\public\build" />
+      <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Symfony\Othmane Groupe 1\Sprint 2\Shining-Talent-Engine-UPF\assets" />
       <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Symfony\Othmane Groupe 1\Sprint 1\Shining-Talent-Engine-UPF\src\Controller" />
       <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Symfony\Othmane Groupe 1\Sprint 1\Shining-Talent-Engine-UPF\public\build" />
     </key>
@@ -143,6 +145,7 @@
       <workItem from="1610445400322" duration="2345000" />
       <workItem from="1610455578555" duration="66000" />
       <workItem from="1610511232482" duration="2144000" />
+      <workItem from="1610513695203" duration="2714000" />
     </task>
     <servers />
   </component>
@@ -158,10 +161,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1610512944795" />
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1610396959877">
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1610516418641">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1610396959877" />
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1610516418641" />
     <state x="312" y="233" key="NewPhpClassDialog" timestamp="1610512930177">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

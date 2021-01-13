@@ -27,8 +27,17 @@ class LoginController extends AbstractController
     public function loginAction(Request $request ): Response
     {
         return $this->render('login.html.twig');
-        }
+    }
 
+    /**
+     * @Route("/menu", name="menu", methods={"GET"})
+     * @return Response
+     */
+
+    public function MenuAction(Request $request ): Response
+    {
+        return $this->render('menu.html.twig');
+    }
 
 //les fonctions des interfaces
 
