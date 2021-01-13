@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CollectionProfiles index{% endblock %}
+
+{% block body %}
+    <h1>CollectionProfiles index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Url</th>
+                <th>DateCreation</th>
+                <th>Description</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for collection_profile in collection_profiles %}
+            <tr>
+                <td>{{ collection_profile.id }}</td>
+                <td>{{ collection_profile.url }}</td>
+                <td>{{ collection_profile.dateCreation ? collection_profile.dateCreation|date('Y-m-d') : '' }}</td>
+                <td>{{ collection_profile.description }}</td>
+                <td>
+                    <a href="{{ path('collection_profiles_show', {'id': collection_profile.id}) }}">show</a>
+                    <a href="{{ path('collection_profiles_edit', {'id': collection_profile.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('collection_profiles_new') }}">Create new</a>
+{% endblock %}

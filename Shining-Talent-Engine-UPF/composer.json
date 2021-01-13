@@ -28,7 +28,8 @@
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
-        "symfony/maker-bundle": "^1.26",
+        "doctrine/doctrine-fixtures-bundle": "^3.4",
+        "symfony/maker-bundle": "^1.27",
         "symfony/stopwatch": "^5.2",
         "symfony/web-profiler-bundle": "^5.2",
         "symfony/web-server-bundle": "4.4.6"

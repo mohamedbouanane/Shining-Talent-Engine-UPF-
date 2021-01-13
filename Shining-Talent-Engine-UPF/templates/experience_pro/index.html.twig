@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ExperiencePro index{% endblock %}
+
+{% block body %}
+    <h1>ExperiencePro index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Poste</th>
+                <th>NomEntreprise</th>
+                <th>Lieu</th>
+                <th>TypeEmploi</th>
+                <th>DateDebut</th>
+                <th>DateFin</th>
+                <th>Description</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for experience_pro in experience_pros %}
+            <tr>
+                <td>{{ experience_pro.id }}</td>
+                <td>{{ experience_pro.Poste }}</td>
+                <td>{{ experience_pro.nomEntreprise }}</td>
+                <td>{{ experience_pro.Lieu }}</td>
+                <td>{{ experience_pro.typeEmploi }}</td>
+                <td>{{ experience_pro.dateDebut ? experience_pro.dateDebut|date('Y-m-d') : '' }}</td>
+                <td>{{ experience_pro.dateFin ? experience_pro.dateFin|date('Y-m-d') : '' }}</td>
+                <td>{{ experience_pro.description }}</td>
+                <td>
+                    <a href="{{ path('experience_pro_show', {'id': experience_pro.id}) }}">show</a>
+                    <a href="{{ path('experience_pro_edit', {'id': experience_pro.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('experience_pro_new') }}">Create new</a>
+{% endblock %}
