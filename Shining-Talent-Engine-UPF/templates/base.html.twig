@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}CVthèque {% endblock %}</title>
+    {% block stylesheets %}<link rel="stylesheet" href="{{ asset('build/app.css') }}"> {% endblock %}
+</head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+
+            <div class="header" >
+                <div align="left" class="menu">
+                    <ul>
+                        <a href="#"><img id="menu" src="C:\Users\KHAOULA O\Desktop\icons8_menu_48px.png" /img></a>
+                    </ul>
+                </div>
+                <div align="center" id="logo">
+                    <ul>
+                        <p><img id="logo" src="C:\Users\KHAOULA O\Desktop\Image 1.png" /img>upf shining talent engine</p>
+                    </ul>
+                </div>
+                <div align="right" id="profil">
+                    <ul>
+                        <a href="#"><img id="profil" src="C:\Users\KHAOULA O\Desktop\icons8_male_user_52px.png" /img></a>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div align="center" id="column">
+                        <h1>gagnez du temps et recrutez les meilleurs talents</h1>
+                    </div>
+                    <div align="center" id="column">
+                        <form>
+                            <label for="search"></label>
+                            <input type="text" id="search" name="search">
+                        </form>
+                    </div>
+                    <div align="center" id="column">
+                        <button class="button buttonsearch"><img src="C:\Users\KHAOULA O\Desktop\searchT.png"></button>
+                    </div>
+                    <h1>ciblez les profils avec les suggetions suivantes:</h1>
+
+                    <div align="center" class="footer">
+                        <button class="button button1">genie informatique</button>
+                        <button class="button button1">genie civil</button>
+                        <button class="button button1">genie des systemes embarques </button>
+                        <button class="button button1">genie des energies renouvelables</button>
+                    </div>
+                </div>
+        {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
 </html>

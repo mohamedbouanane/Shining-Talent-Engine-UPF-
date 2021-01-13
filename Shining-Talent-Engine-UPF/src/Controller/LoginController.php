@@ -3,43 +3,29 @@
 
 namespace App\Controller;
 
+use App\Entity\Utilisateur;
+use App\Form\UtilisateurType;
+use App\Repository\UtilisateurRepository;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\PasswordType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Validator\Constraints\Choice;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 
-class LoginController
+class LoginController extends AbstractController
 {
     /**
-     * @Route("/login", name="login", methods={"GET","POST"})
+     * @Route("/base", name="base", methods={"GET","POST"})
      * @return Response
      */
 
-    public function loginAction(Request $request ): Response
+    public function baseAction(Request $request ): Response
     {
-
-        $utilisateur = new Utilisateur();
-        $form = $this->createFormBuilder($utilisateur)
-            ->add('username',TextRole::class)
-            ->add('password',PasswordRole::class)
-            ->getForm();
-        $form->handleRequest($request);
-        if($form->isSubmitted()){
-            $password = $utilisateur->getPass();
-            $username = $utilisateur->getMail();
-            $id = $utilisateur->getId();
-            $repository = $this->getDoctrine()->getRepository(Utilisateur::class);
-            $utilisateur1 = $repository->findOneBy(array('username'=>$username,'password'=>$password));
-            if(!$utilisateur1)
-            {
-                $this->addFlash('fail', 'Please check your username and password !!');
-            }
-            else {
-                if ($utilisateur1->getRole() == 'admin') { return $this->redirectToRoute('admin',['id' =>$utilisateur1->getId()]);}
-
-                if ($utilisateur1->getRole() == 'etudiant') { return $this->redirectToRoute('etudiant',['id' =>$utilisateur1->getId()]);}
-
-                if ($utilisateur1->getRole() == 'responsable') {return $this->redirectToRoute('responsable',['id' =>$utilisateur1->getId()]);}
-
-                if ($utilisateur1->getRole() == 'utilisateur'){return $this->redirectToRoute('utilisateur',['id' =>$utilisateur1->getId()]);}}
-        }
-        return $this->render('login.html.twig',['utilisateur' => $utilisateur, 'form'=>$form->createView()] );
+        return $this->render('base.html.twig');
     }
 
 
