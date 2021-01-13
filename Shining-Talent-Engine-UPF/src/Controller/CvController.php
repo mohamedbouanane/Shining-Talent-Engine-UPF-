@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Cv;
 use App\Form\CvType;
 use App\Repository\CvRepository;
+use PhpParser\Node\Expr\Array_;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -90,5 +91,16 @@ class CvController extends AbstractController
         }
 
         return $this->redirectToRoute('cv_index');
+    }
+
+    /**
+     * @Route("/Recherche", name="cv_index", methods={"GET",POST})
+     */
+    public function Recherche(CvRepository $cvRepository): Response
+    {
+        $CV = new Cv();
+        return $this->render('rechercheVisiteur.html.twig', [
+            'cvs' => $cvRepository->findBy(array($CV->getAddress(),$CV->getPays(),$CV->getVille(),$CV->getTitre()))
+        ]);
     }
 }

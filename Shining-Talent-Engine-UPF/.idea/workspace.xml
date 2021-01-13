@@ -120,7 +120,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="PHPUnit.TestAuthentificationPage.testuniteAuthentificationPage">
+  <component name="RunManager" selected="PHPUnit.TestRechercherVisiteurCV.testuniteAuthentificationPage">
     <configuration name="TestAuthentificationPage.testunite" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="App\Tests\TestAuthentificationPage" file="$PROJECT_DIR$/tests/TestAuthentificationPage.php" method="testunite" scope="Method" />
       <method v="2" />
@@ -129,8 +129,13 @@
       <TestRunner class="App\Tests\TestAuthentificationPage" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/TestAuthentificationPage.php" method="testuniteAuthentificationPage" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="TestRechercherVisiteurCV.testuniteAuthentificationPage" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\TestRechercherVisiteurCV" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/TestRechercherVisiteurCV.php" method="testuniteAuthentificationPage" scope="Method" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.TestRechercherVisiteurCV.testuniteAuthentificationPage" />
         <item itemvalue="PHPUnit.TestAuthentificationPage.testuniteAuthentificationPage" />
         <item itemvalue="PHPUnit.TestAuthentificationPage.testunite" />
       </list>
@@ -155,6 +160,7 @@
       <workItem from="1610455578555" duration="66000" />
       <workItem from="1610460122471" duration="5123000" />
       <workItem from="1610501963036" duration="1054000" />
+      <workItem from="1610503566931" duration="2169000" />
     </task>
     <servers />
   </component>
@@ -162,6 +168,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="77" key="#Inspections" timestamp="1610505359340">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="77" key="#Inspections/0.0.1536.834@0.0.1536.834" timestamp="1610505359340" />
     <state x="482" y="9" key="#PHP" timestamp="1610502524506">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -174,37 +184,41 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="349" y="73" key="#Test_Frameworks/0.0.1536.834@0.0.1536.834" timestamp="1610502703562" />
-    <state x="499" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610502432156">
+    <state x="499" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610504957576">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="499" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1610502432156" />
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1610502670532">
+    <state x="499" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1610504957576" />
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1610504705198">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1610502670532" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1610503019811">
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1610504705198" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1610505737743">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1610503019811" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1610503019811">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1610505737743" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1610505737743">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1610503019811" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1610503019810">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1610505737743" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1610505737743">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1610503019810" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1610503019811">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1610505737743" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1610505737743">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1610503019811" />
-    <state x="339" y="233" key="NewPhpClassDialog" timestamp="1610502131669">
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1610505737743" />
+    <state x="577" y="234" key="NewPhpClassDialog" timestamp="1610504841340">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="339" y="233" key="NewPhpClassDialog/0.0.1536.834@0.0.1536.834" timestamp="1610502131669" />
+    <state x="577" y="234" key="NewPhpClassDialog/0.0.1536.834@0.0.1536.834" timestamp="1610504841340" />
     <state x="465" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1610455596754">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="465" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1610455596754" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1610505166125">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1610505166125" />
   </component>
 </project>
