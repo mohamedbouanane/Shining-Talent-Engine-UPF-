@@ -24,7 +24,6 @@ class UtilisateurController extends AbstractController
             'utilisateurs' => $utilisateurRepository->findAll(),
         ]);
     }
-
     /**
      * @Route("/new", name="utilisateur_new", methods={"GET","POST"})
      */

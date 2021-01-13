@@ -1,3 +1,125 @@
-body {
-    background-color: lightgray;
+/*--------------------------Page d'authentification----------------------------*/
+html {
+    min-height: 100vh;
 }
+
+.bodyPageAuthentification {
+    margin: 0;
+    background: radial-gradient(#f3f2f1, #ffffff);
+}
+
+.page-title {
+    color: #0a0602;
+    font-family: Creepy, serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+}
+
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: #020202;
+    font-family: Creepy, serif;
+}
+
+.overlay-text-small {
+    font-size: .3em;
+}
+
+.overlay-text.visible {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+}
+
+.login-container {
+    background-color: white;
+    padding: 50px 30px;
+    min-width: 400px;
+    width: 50%;
+    max-width: 600px;
+    /*border: outset whitesmoke;*/
+    font-family: Helvetica;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    display: table-cell;
+    width: inherit;
+    border-style: outset;
+
+}
+
+.login-title {
+    color: rgb(14, 13, 13);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.input-group label {
+    color: rgb(15, 15, 15);
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin-bottom: 7px;
+
+}
+
+.input-group input {
+    font-size: 1.5em;
+    padding: 20px 30px;
+    background-color:white;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 30px;
+    color: black;
+    font-weight: lighter;
+
+}
+
+.input-group input:focus {
+    border: 1px solid hsl(201, 100%, 50%)
+}
+
+.login-button {
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: rgb(48, 31, 197);
+    border: 1px solid hsl(201, 100%, 50%);
+    outline: none;
+    font-size: 2.5em;
+    color:white;
+    font-weight: lighter;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: hsla(201, 100%, 50%, 0.3);
+    color:  hsla(201, 100%, 50%, 0.5);
+
+}
+
+.login-button:focus {
+    background-color: hsla(201, 100%, 50%, 0.5);
+    color:hsla(201, 100%, 50%, 0.3) ;
+}
+/*---------------------------------Fin----------------------------------*/
+
+
