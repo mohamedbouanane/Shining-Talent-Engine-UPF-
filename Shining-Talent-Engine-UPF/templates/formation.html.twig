@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	{% block stylesheets %}
+		<link rel="stylesheet" href="{{ asset('build/app.css') }}">
+	{% endblock %}
+</head>
+<body>
+	
+{% include 'menu.html.twig' %}
+
+    
+   <div class="experience1">
+   <form action="">
+   
+   <table>
+   <tr><td><p class="experience2">Formation</p></td></tr>
+   <tr><td><p class="experience3">Nom de formation</p></td><td><input type="text" class="experience4"></td></tr>
+   <tr><td> <p class="experience3">Date début</p></td><td><input type="Date" class="experience4"></td></tr>
+   <tr><td><p class="experience3">Date fin</p></td><td><input type="Date" class="experience4"></td></tr>
+    <tr><td><p class="experience3">Description</p></td><td><textarea class="experience4"></textarea></td></tr>
+  
+
+    <tr><td><input type="button" value="Annuler" class="experience5"></td><td><input type="button" value="Sauvegarder" class="experience5"></td></tr>
+
+   
+   </table>
+   
+   
+    </form>
+
+   </div> 
+
+	{% block scripts %}
+		<script src="{{ asset('build/app.js') }}"></script>
+	{% endblock %}
+</body>
+</html>

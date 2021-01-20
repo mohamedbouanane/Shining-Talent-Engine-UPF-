@@ -1,22 +1,51 @@
-{% extends 'base.html.twig' %}
-{% block title %}Login Page{% endblock %}
-{% block stylesheets %}<link rel="stylesheet" href="{{ asset('build/app.css') }}">{% endblock %}
-{% block body %}
-    <body>
-    <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
-        <br><br><br><br>
-        <a href="#" class="w3-bar-item w3-button"><center><img src="images/upf.png" /><div class="upfPageOfficiel">UPF page officiel</div></center></a>
-        <br><br>
-        <a href="#" class="w3-bar-item w3-button"><center><img src="images/info.png" /><div class="aPropos">À propos</div></center></a>
-        <a href="#" class="w3-bar-item w3-button"><center><img src="images/search.png" /><div class="cherchezDesTalans">Cherchez des talans</div></center></a>
-    </div>
-    <div class="w3-teal">
-        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-    </div>
-    <img src="/build/images/logo.png" class="logo">
-    <div class="title">UPF Shining Talent Engine</div>
-    <img src="/build/images/user.png.png" class="logo2">
-    <script src="/build/app.js" language="javascript"></script>
-    </body>
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+
+	{% block stylesheets %}
+		<link rel="stylesheet" href="{{ asset('build/app.css') }}">
+	{% endblock %}
+</head>
+<body>
+	
+
+  	<button class="ham"></button>
+  <nav class="navbar">
+    <ul>
+      <li><a class="menuLink" href="#">UPF page officiel</a></li>
+      <li><a class="menuLink" href="#">À propos</a></li>
+      <li><a class="menuLink" href="#">Cherchez des talans</a></li>
+      
+    </ul>
+  </nav>
+
+	<img src="build/logo.png" class="logo">
+	<div class="title">UPF Shining Talent Engine</div>
+	<a href="" class="logo2"><img src="build/user.png"></a>
+	{% block scripts %}
+		<script>
+		var navbar = document.querySelector(".navbar")
+		var ham = document.querySelector(".ham")
+
+		// toggles hamburger menu in and out when clicking on the hamburger
+		function toggleHamburger(){
+		navbar.classList.toggle("showNav")
+		ham.classList.toggle("showClose")
+		}
+
+		ham.addEventListener("click", toggleHamburger)
+
+		// toggle when clicking on links
+
+		// METHOD 1
+		var menuLinks = document.querySelectorAll(".menuLink")
+		menuLinks.forEach( 
+		function(menuLink) { 
+			menuLink.addEventListener("click", toggleHamburger) 
+		}
+		)
+			
+		</script>
+	{% endblock %}
+</body>
+</html>
