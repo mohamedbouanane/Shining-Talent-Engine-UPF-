@@ -11,25 +11,25 @@ import './styles/app.css';
 // start the Stimulus application
 import './bootstrap';
 
-function menuToggle(){
-    if (document.getElementById("navBtn").className === "navOpen") {
-        document.getElementById("navBtn").className = "";
-        document.getElementById("listMenu").className = "";
-        document.getElementById("shadowbox").className = "";
-    } else {
-        document.getElementById("navBtn").className = "navOpen";
-        document.getElementById("listMenu").className = "listOpen";
-        document.getElementById("shadowbox").className = "visible";
-    }
+var navbar = document.querySelector(".navbar")
+var ham = document.querySelector(".ham")
+
+// toggles hamburger menu in and out when clicking on the hamburger
+function toggleHamburger(){
+  navbar.classList.toggle("showNav")
+  ham.classList.toggle("showClose")
 }
 
-function w3_open() {
-    document.getElementById("mySidebar").style.width = "100%";
-    document.getElementById("mySidebar").style.display = "block";
-}
+ham.addEventListener("click", toggleHamburger)
 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
+// toggle when clicking on links
+
+// METHOD 1
+var menuLinks = document.querySelectorAll(".menuLink")
+menuLinks.forEach( 
+  function(menuLink) { 
+    menuLink.addEventListener("click", toggleHamburger) 
+  }
+)
 
 
