@@ -13,7 +13,7 @@ import './bootstrap';
 
 var navbar = document.querySelector(".navbar")
 var ham = document.querySelector(".ham")
-
+// Menu ...
 // toggles hamburger menu in and out when clicking on the hamburger
 function toggleHamburger(){
   navbar.classList.toggle("showNav")
