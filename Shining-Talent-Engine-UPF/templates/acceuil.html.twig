@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	{% block stylesheets %}
+		<link rel="stylesheet" href="{{ asset('build/app.css') }}">
+	{% endblock %}
+</head>
+<body>
+	
+{% include 'menu.html.twig' %}
+ 
+
+<p class="acceuil1">Gagnez du temps et recrutez les meilleurs talents</p>
+
+<form action="">
+
+<input type="text" class="acceuil2" />
+
+<input type="button" value="Recherche" class="acceuil3" />
+
+</form>
+
+
+<p class="acceuil6">Siblez des profiles avec les propositions suivants</p>
+<form action="">
+
+
+<input type="button" value="Ingenierie" class="acceuil4" />
+<input type="button" value="Architecture" class="acceuil5" />
+
+
+</form>
+ 	
+
+	{% block scripts %}
+		<script src="{{ asset('build/app.js') }}"></script>
+	{% endblock %}
+</body>
+</html>

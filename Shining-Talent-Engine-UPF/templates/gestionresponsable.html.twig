@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	{% block stylesheets %}
+		<link rel="stylesheet" href="{{ asset('build/app.css') }}">
+	{% endblock %}
+</head>
+<body>
+	{% include 'menu.html.twig' %}
+
+
+
+    
+   <div class="experience1">
+   <div class="gestion">
+<a href="" class="gestion1">Gestion des comptes des responsables</a>
+<a href="" class="gestion2">Gestion des comptes des étudiants</a>
+<p class="gestion3">Liste des comptes des responsables</p>
+<a href="" class="gestion4">Ajouter un compte </a>
+</div>
+   <form action="">
+   
+   <table>
+   <tr><td><p class="gestion5">Nom d'utilisateur</p></td><td><p class="gestion5">Adresse mail</p></td><td><p class="gestion5">Mot de passe</p></td><td><input type="text" placeholder="Recherche" class="gestion6"></td></tr>
+   <tr><td><p class="gestion5"></p></td><td><p class="gestion5"></p></td><td><p class="gestion5"></p></td><td><a href="" class="gestion7">Modifier</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="gestion7">Supprimer</a></td><td></td></tr>
+   
+
+
+   
+   </table>
+   
+   
+    </form>
+
+   </div> 
+
+	{% block scripts %}
+		<script src="{{ asset('build/app.js') }}"></script>
+	{% endblock %}
+</body>
+</html>

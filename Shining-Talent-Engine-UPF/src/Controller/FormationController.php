@@ -24,7 +24,6 @@ class FormationController extends AbstractController
             'formations' => $formationRepository->findAll(),
         ]);
     }
-
     /**
      * @Route("/new", name="formation_new", methods={"GET","POST"})
      */
