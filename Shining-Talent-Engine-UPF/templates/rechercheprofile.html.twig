@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	{% block stylesheets %}
+		<link rel="stylesheet" href="{{ asset('build/app.css') }}">
+	{% endblock %}
+</head>
+<body>
+	{% include 'menu.html.twig' %}
+
+<form action="">
+
+<input type="text" placeholder="Recherche" class="recherche1" /> 
+
+</form>
+
+<p class="recherche2">Essayer les mot clé suivant <p>
+<input type="button" value="architecture" class="recherche3"/><input type="button" value="ingenierie" class="recherche4"/>
+<p class="recherche5">3 Résultats pour Ingénieur</p>
+
+<p class="recherche6">En raison de confidentialité, certains profiles ne vous seront pas accessibles. Si vous êtes une entreprise et vous cherchez des candidas
+pour vos activités, veuillez nous contacter via notre boit mail info@upf.ac.ma</p>
+
+
+<p class="recherche7">Afficher plus de résultats</p>
+
+	{% block scripts %}
+		<script src="{{ asset('build/app.js') }}"></script>
+	{% endblock %}
+</body>
+</html>
