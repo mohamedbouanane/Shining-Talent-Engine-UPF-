@@ -92,3 +92,14 @@ class CvController extends AbstractController
         return $this->redirectToRoute('cv_index');
     }
 }
+
+     * @Route("/Recherche", name="cv_index", methods={"GET",POST})
+    /**
+     */
+    public function Recherche(CvRepository $cvRepository): Response
+        $CV = new Cv();
+    {
+        return $this->render('rechercheVisiteur.html.twig', [
+            'cvs' => $cvRepository->findBy(array($CV->getAddress(),$CV->getPays(),$CV->getVille(),$CV->getTitre()))
+        ]);
+    }

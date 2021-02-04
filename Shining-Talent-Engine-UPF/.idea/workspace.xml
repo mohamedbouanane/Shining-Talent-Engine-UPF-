@@ -16,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
@@ -95,6 +95,37 @@
       <path value="$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts" />
       <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/proxy-manager-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mkqWegWoJ48dTZSwBzOiJz3C8t" />
@@ -115,6 +146,13 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -126,6 +164,26 @@
       <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Symfony\Othmane Groupe 1\Sprint 1\Shining-Talent-Engine-UPF\src\Controller" />
       <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Symfony\Othmane Groupe 1\Sprint 1\Shining-Talent-Engine-UPF\public\build" />
     </key>
+  <component name="RunManager" selected="PHPUnit.TestRechercherVisiteurCV.testuniteAuthentificationPage">
+    <configuration name="TestAuthentificationPage.testunite" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\TestAuthentificationPage" file="$PROJECT_DIR$/tests/TestAuthentificationPage.php" method="testunite" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestAuthentificationPage.testuniteAuthentificationPage" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\TestAuthentificationPage" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/TestAuthentificationPage.php" method="testuniteAuthentificationPage" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRechercherVisiteurCV.testuniteAuthentificationPage" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\TestRechercherVisiteurCV" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/TestRechercherVisiteurCV.php" method="testuniteAuthentificationPage" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.TestRechercherVisiteurCV.testuniteAuthentificationPage" />
+        <item itemvalue="PHPUnit.TestAuthentificationPage.testuniteAuthentificationPage" />
+        <item itemvalue="PHPUnit.TestAuthentificationPage.testunite" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -150,6 +208,15 @@
 =======
       <workItem from="1610533668484" duration="1017000" />
 >>>>>>> Stashed changes
+      <workItem from="1610047975141" duration="737000" />
+      <workItem from="1610107999450" duration="46000" />
+      <workItem from="1610314745200" duration="2650000" />
+      <workItem from="1610396815017" duration="483000" />
+      <workItem from="1610445400322" duration="2345000" />
+      <workItem from="1610455578555" duration="66000" />
+      <workItem from="1610460122471" duration="5123000" />
+      <workItem from="1610501963036" duration="1054000" />
+      <workItem from="1610503566931" duration="2169000" />
     </task>
     <servers />
   </component>
@@ -177,5 +244,58 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="465" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1610455596754" />
+  <component name="WindowStateProjectService">
+    <state x="361" y="77" key="#Inspections" timestamp="1610505359340">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="77" key="#Inspections/0.0.1536.834@0.0.1536.834" timestamp="1610505359340" />
+    <state x="482" y="9" key="#PHP" timestamp="1610502524506">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="482" y="9" key="#PHP/0.0.1536.834@0.0.1536.834" timestamp="1610502524505" />
+    <state x="452" y="23" width="1001" height="788" key="#TestAuthentificationPage.testunite" timestamp="1610502528618">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="452" y="23" width="1001" height="788" key="#TestAuthentificationPage.testunite/0.0.1536.834@0.0.1536.834" timestamp="1610502528618" />
+    <state x="349" y="73" key="#Test_Frameworks" timestamp="1610502703562">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="349" y="73" key="#Test_Frameworks/0.0.1536.834@0.0.1536.834" timestamp="1610502703562" />
+    <state x="499" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610504957576">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1610504957576" />
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1610504705198">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1610504705198" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1610505737743">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1610505737743" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1610505737743">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1610505737743" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1610505737743">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1610505737743" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1610505737743">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1610505737743" />
+    <state x="577" y="234" key="NewPhpClassDialog" timestamp="1610504841340">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="577" y="234" key="NewPhpClassDialog/0.0.1536.834@0.0.1536.834" timestamp="1610504841340" />
+    <state x="465" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1610455596754">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="465" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1610455596754" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1610505166125">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1610505166125" />
   </component>
 </project>
