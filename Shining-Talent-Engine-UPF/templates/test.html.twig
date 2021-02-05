@@ -1,0 +1,32 @@
+<html>
+<head>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+    {% endblock %}
+    <title>Login Page</title>
+</head>
+<link rel="icon" href="/build/images/logo.png" type="image/gif" sizes="18x18">
+<body class="bodyPageAuthentification">
+{% include 'menu.html.twig' %}
+
+<br><br><br><br><br><br>
+<div class="overlay-text visible">
+    <div>
+        <div class="login-container">
+            <br>
+            <form>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+                <div class="input-group">
+                    <label>Mot de passe</label>
+                    <input type="password">
+                </div>
+                <button type="submit" class="login-button">Connexion</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

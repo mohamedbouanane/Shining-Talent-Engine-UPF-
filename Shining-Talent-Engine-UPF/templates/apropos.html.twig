@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	{% block stylesheets %}
+		<link rel="stylesheet" href="{{ asset('build/app.css') }}">
+	{% endblock %}
+</head>
+<link rel="icon" href="/build/images/logo.png" type="image/gif" sizes="18x18">
+<body >
+	{% include 'menu.html.twig' %}
+
+    <p class="apropos1">UPF est la première université́ privée à Fès Reconnue par L’Etat. Elle œuvre depuis 2006 à offrir des formations d’excellence dans les métiers d’avenir comme le Génie Civil, les Energies renouvelables, l’industrie Electronique et Automatique, l’Audit et Contrôle de Gestion, le Droit d’entreprise et les métiers de l’Architecture et de l’Urbanisme.
+
+Aujourd’hui, l ’UPF offre une vingtaine de formations (Ingénieur, Licences et Masters) dans sa Faculté́ des Sciences de l ’Ingénieur, la Fès Business School, l’Institut des Hautes Études Juridiques et Sociales et l’Ecole Supérieure des Métiers de l ’Architecture et du Bâtiment.</p>
+
+<p class="apropos3">L’Université́ Privée de Fès a pour ambition de :</p>
+
+<p class="apropos2">– Dispenser aux étudiants une formation de qualité́ : une attention particulière est portée à la qualité́ de l’enseignement dans le contexte d’une université́ à dimension humaine, s’appuyant sur la disponibilité́ et la proximité́ de ses enseignants;<br>
+
+– Préparer les étudiants à leur vie professionnelle tout en favorisant leur développement intellectuel, culturel et humain : au delà du contenu des formations, l’entraînement intensif à la réflexion, à la critique, à l’argumentation et à la recherche d’informations induit des compétences indispensables à des citoyens responsables, véritables acteurs de la société de demain;<br>
+
+– Enrichir les savoirs diffusés grâce à une recherche de qualité́ : la spécifité d’une université est de disposer d’enseignants-chercheurs nourrissant leur enseignement par une recherche développant des projets d’envergure menés au sein de réseaux nationaux et internationaux;<br>
+
+– Contribuer à la vie culturelle et économique de la région : sur le socle que constituent la formation et la recherche, l’université Privée de Fès met les savoirs qu’elle développe au service de la société.<br>
+
+Enracinée dans son milieu et à l’écoute de ses besoins, elle est soucieuse de participer au développement de sa région, en répondant aux attentes d’acteurs culturels, économiques et sociaux ainsi qu’aux sollicitations émanant d’entreprises et d’organismes publics et privés.<br>
+
+Toute l’organisation de l’Université́ Privée de Fès, ses équipes pédagogique et scientifique, son administration, ainsi que les moyens dont elle dispose sont mobilisés pour remplir ces quatre objectifs.</p>
+
+	{% block scripts %}
+		<script src="{{ asset('build/app.js') }}"></script>
+	{% endblock %}
+</body>
+</html>

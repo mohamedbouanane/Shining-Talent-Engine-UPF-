@@ -1,7 +1,9 @@
-{% extends 'base.html.twig' %}
+{% include 'menu.html.twig' %}
 
 {% block title %}Log in!{% endblock %}
-
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+{% endblock %}
 {% block body %}
 <form method="post">
     {% if error %}

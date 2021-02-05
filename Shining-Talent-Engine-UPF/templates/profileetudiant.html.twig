@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	{% include 'menu.html.twig' %}
 
 	{% block stylesheets %}
 		<link rel="stylesheet" href="{{ asset('build/app.css') }}">
@@ -10,7 +9,7 @@
 <link rel="icon" href="/build/images/logo.png" type="image/gif" sizes="18x18">
 <body>
 	
-
+{% include 'menu.html.twig' %}
 
 
 	{% block scripts %}

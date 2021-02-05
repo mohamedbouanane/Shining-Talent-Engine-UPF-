@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	{% block stylesheets %}
+		<link rel="stylesheet" href="{{ asset('build/app.css') }}">
+	{% endblock %}
+</head>
+<link rel="icon" href="/build/images/logo.png" type="image/gif" sizes="18x18">
+<body>
+  	<button class="ham"></button>
+  <nav class="navbar">
+    <ul>
+      <li><a class="menuLink" href="http://upf.ac.ma/">UPF page officiel</a></li>
+      <li><a class="menuLink" href="/apropos">À propos</a></li>
+      <li><a class="menuLink" href="/talent">Cherchez des talents</a></li>
+    </ul>
+  </nav>
+    <a href="/"><img src="/build/images/logo.png" si class="logo">
+	<div class="title">UPF Shining Talent Engine</div>
+	<a href="/login" class="logo2"><img src="build/images/user.png"></a>
+	{% block scripts %}
+		<script>
+		var navbar = document.querySelector(".navbar")
+		var ham = document.querySelector(".ham")
+
+		// toggles hamburger menu in and out when clicking on the hamburger
+		function toggleHamburger(){
+		navbar.classList.toggle("showNav")
+		ham.classList.toggle("showClose")
+		}
+
+		ham.addEventListener("click", toggleHamburger)
+
+		// toggle when clicking on links
+
+		// METHOD 1
+		var menuLinks = document.querySelectorAll(".menuLink")
+		menuLinks.forEach( 
+		function(menuLink) { 
+			menuLink.addEventListener("click", toggleHamburger) 
+		}
+		)
+			
+		</script>
+	{% endblock %}
+</body>
+</html>
