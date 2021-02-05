@@ -3,10 +3,12 @@
 
 namespace App\Controller;
 
+use App\Entity\User;
 use App\Entity\Utilisateur;
 use App\Form\UtilisateurType;
 use App\Repository\UtilisateurRepository;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -23,10 +25,46 @@ class LoginController extends AbstractController
      * @Route("/login", name="login", methods={"GET","POST"})
      * @return Response
      */
-
     public function loginAction(Request $request ): Response
     {
-        return $this->render('authentification.html.twig');
+        $utilisateur = new User();
+        $form = $this->createFormBuilder($utilisateur)
+            ->add('email',EmailType::class)
+            ->add('password',PasswordType::class)
+            ->getForm();
+        $form->handleRequest($request);
+
+        if($form->isSubmitted()){
+            $password = $utilisateur->getPassword();
+            $email = $utilisateur->getUsername();
+            $id = $utilisateur->getId();
+            $repository = $this->getDoctrine()->getRepository(User::class);
+            $utilisateur1 = $repository->findOneBy(array('username'=>$email,'password'=>$password));
+            if(!$utilisateur1)
+            {
+                $this->addFlash('fail', 'Please check your username and password !!');
+            }
+            else {
+
+                if ($utilisateur1->getRoles() == 'Admin') {
+
+                    return $this->redirectToRoute('admin',['id' =>$utilisateur1->getId()]);
+                }
+
+                if ($utilisateur1->getRoles() == 'Responsable') {
+
+                    return $this->redirectToRoute('responsable',['id' =>$utilisateur1->getId()]);
+                }
+
+                if ($utilisateur1->getType() == 'Etudiant'){
+
+                    return $this->redirectToRoute('etudiant',['id' =>$utilisateur1->getId()]);
+                }}
+        }
+        return $this->render('authentification.html.twig',[
+                'user' => $utilisateur,
+                'form'=>$form->createView()]
+        );
     }
 
     /**

@@ -73,6 +73,7 @@ body {
     flex-direction: column;
     margin-bottom: 20px;
 
+
 }
 
 .input-group label {
@@ -81,7 +82,6 @@ body {
     font-weight: lighter;
     font-size: 1.5em;
     margin-bottom: 7px;
-
 }
 
 .input-group input {
@@ -95,9 +95,12 @@ body {
     color: black;
     font-weight: lighter;
 
+    width: 100%;
+
 }
 
 .input-group input:focus {
+
     background-color: white;
     border: 1px solid rgb(48, 31, 197);
     color: rgb(48, 31, 197);
@@ -231,12 +234,6 @@ body {
 
 
 }
-
-
-
-
-
-
 
 /* Page experience , formation , ajoututilisateur , modifieutilisateur , gestion , ajoutetudiant , modifieprofile , modifieresponsable , */
 
@@ -699,10 +696,8 @@ p{
     font-family: "Segoe UI";
     font-size: 25px;
     text-align: left;
-    background-color: aquamarine;
+    background-color: white;
     font-weight: bold;
-
-
 }
 
 .apropos2{
@@ -712,13 +707,10 @@ p{
     font-family: "Segoe UI";
     font-size: 25px;
     text-align: left;
-    background-color: aquamarine;
+    background-color: white;
     font-weight: bold;
-
-
 }
 .apropos3{
-
     margin: 5%;
     padding: 1%;
     color: #093caf;

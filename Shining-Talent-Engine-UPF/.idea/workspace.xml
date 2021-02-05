@@ -2,46 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ede02645-a500-468d-a040-4e1eba955652" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ButtonChercher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/info.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/rech.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/upf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ResponsableController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TestController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/acceuil.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ajoutetudiant.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ajoututilisateur.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/apropos.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/authentification.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/experience.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/formation.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gestionetudiant.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gestionresponsable.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/menu.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/modifieprofile.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/modifieresponsable.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/modifieutilisateur.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profileetudiant.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/rechercheprofile.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/rechercheprofileresponsable.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/test.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Shining-Talent-Engine-UPF.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Shining-Talent-Engine-UPF.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/acceuil.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/acceuil.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rechercheprofile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rechercheprofile.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +129,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/build" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../An3/S6/PHP &amp; MySQL/Projet Symfony/Projet tutora/gestion_tutorat" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -176,15 +141,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\public\build" />
       <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\public\build\images" />
       <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\assets\images" />
       <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\assets" />
       <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\src\Controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Anas Etude Universitaire\An4\S7\Projet Tutoré\Shining-Talent-Engine-UPF-\Shining-Talent-Engine-UPF\templates" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -214,7 +179,11 @@
       <workItem from="1612490936035" duration="1792000" />
       <workItem from="1612492746335" duration="1789000" />
       <workItem from="1612494564827" duration="320000" />
-      <workItem from="1612509207281" duration="494000" />
+      <workItem from="1612509207281" duration="2004000" />
+      <workItem from="1612511246130" duration="36000" />
+      <workItem from="1612511884730" duration="1671000" />
+      <workItem from="1612513585711" duration="651000" />
+      <workItem from="1612517427092" duration="1328000" />
     </task>
     <servers />
   </component>
@@ -229,10 +198,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1612494805642" />
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1612463630394">
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1612518469707">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1612463630394" />
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1612518469707" />
     <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1612453441792">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -249,10 +218,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1612453441792" />
-    <state x="88" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1612494591040">
+    <state x="88" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1612517429010">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="88" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1612494591040" />
+    <state x="88" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1612517429010" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1612492424301">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
